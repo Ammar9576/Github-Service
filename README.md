@@ -1,1 +1,1 @@
-# Github-Service
+# GitConnect

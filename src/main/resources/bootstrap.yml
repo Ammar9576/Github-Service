@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: github-service
+   
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false

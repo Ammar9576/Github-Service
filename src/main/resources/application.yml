@@ -1,0 +1,85 @@
+spring:
+  profiles: "default"
+
+git:
+  userName: 206494818
+  token: UH2_J_1iBUHP
+  repository: Programmatic_Microservices
+  branch: github-service
+  commitMsg: Updated successfully
+  field: "liabDateStr"
+  resturl: http://localhost:8080/client
+  organization: CINBCUniversal
+  
+cp:
+  Name: cp
+  fileName: conf/dmt-network-non-prod
+  #cancel: http://datamaker-stage.ash.inbcu.com/data-maker/v1/schedule/cp-network-10086/cancel
+  
+dmt:
+  Name: dmt
+  fileName: conf/dmt-network-non-prod
+  #cancel: http://datamaker-stage.ash.inbcu.com/data-maker/v1/schedule/dmt-network-group-1-2/cancel
+    
+   
+mail:
+  utility:
+    url: https://mailing-utility.devaoa.inbcu.com/mail
+ 
+notification:
+  email:
+    recipient: s.cherlin@nbcuni.com
+    sender: s.cherlin@nbcuni.com
+    message: liability has been updated to next quarter!
+    subject: liabliaty updated
+
+
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+---
+spring:
+  profiles: "dev"
+
+git:
+  userName: 206494818
+  token: UH2_J_1iBUHP
+  repository: Programmatic_Microservices
+  branch: github-service
+  commitMsg: Updated successfully
+  field: "liabDateStr"
+  resturl: http://localhost:8080/client
+  organization: CINBCUniversal
+  
+cp:
+  Name: cp
+  fileName: conf/dmt-network-non-prod
+  #cancel: http://datamaker-stage.ash.inbcu.com/data-maker/v1/schedule/cp-network-10086/cancel
+  
+dmt:
+  Name: dmt
+  fileName: conf/dmt-network-non-prod
+  #cancel: http://datamaker-stage.ash.inbcu.com/data-maker/v1/schedule/dmt-network-group-1-2/cancel
+    
+   
+mail:
+  utility:
+    url: https://mailing-utility.devaoa.inbcu.com/mail
+ 
+notification:
+  email:
+    recipient: s.cherlin@nbcuni.com
+    sender: s.cherlin@nbcuni.com
+    message: liability has been updated to next quarter!
+    subject: liabliaty updated
+
+
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
